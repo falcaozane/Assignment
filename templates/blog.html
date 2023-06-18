@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!--------Title----------------------------->
+    <title>Blog Page</title>
+
+    <!--------Stylesheet------------------------>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'blog.css')}}">
+
+    <!--------Favicon--------------------------->
+    <link rel="icon" href="{{url_for('static', filename= 'favicon.png')}}">
+    
+    <script src="https://kit.fontawesome.com/e95a5f72ef.js" crossorigin="anonymous"></script>
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+              <img src="{{url_for('static', filename= 'favicon.png')}}" alt="" width="30" height="24" class="d-inline-block align-text-top">PayBill
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Bills & Payments
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Current Bill</a></li>
+                  <li><a class="dropdown-item" href="checkout.html">Quick Bill Payments</a></li>
+                  <li><a class="dropdown-item" href="#">Bill Over SMS</a></li>
+                  <li><a class="dropdown-item" href="#">Payment History</a></li>
+                  <li><a class="dropdown-item" href="#">Download Bill</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Payment Issues</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="New-Connection.html">New Connection</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Help & Support
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="complaint.html">Complaints</a></li>
+                  <li><a class="dropdown-item" href="#">Report Electricity Theft</a></li>
+                  <li><a class="dropdown-item" href="vcc.html">Virtual Contact Centre</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="home.html" id="" role="" >
+                  Services
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+
+    <!---===Blog-Section----------------------->
+    <section id="blog">
+
+        <!-----blog-container------------------>
+        <div class="blog-container">
+
+            <!--box-1---------------------->
+            <div class="blog-box">
+
+                <!--img------------>
+                <div class="blog-img">
+                    <img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Blog">
+                </div>
+
+                <!-- text---------->
+                <div class="blog-text">
+                    <span>18 July 2021 / Web Design</span>
+                    <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
+                    <p>Lorem34 ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto nisi odio tenetur! Reiciendis officia neque et accusamus, ducimus ullam provident, eius ratione veniam dolorum nemo obcaecati eligendi rec</p>
+                    <a href="#">Read More</a>
+                </div>
+
+            </div>
+
+            <!--box-2---------------------->
+            <div class="blog-box">
+
+                <!--img------------>
+                <div class="blog-img">
+                    <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog">
+                </div>
+
+                <!-- text---------->
+                <div class="blog-text">
+                    <span>18 July 2021 / Web Design</span>
+                    <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto nisi odio tenetur! Reiciendis officia neque et accusamus, ducimus ullam provident, eius ratione veniam dolorum nemo obcaecati eligendi rec</p>
+                    <a href="#">Read More</a>
+                </div>
+
+            </div>
+
+            <!--box-3---------------------->
+            <div class="blog-box">
+
+                <!--img------------>
+                <div class="blog-img">
+                    <img src="https://images.pexels.com/photos/2990650/pexels-photo-2990650.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog">
+                </div>
+
+                <!-- text---------->
+                <div class="blog-text">
+                    <span>18 July 2021 / Web Design</span>
+                    <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto nisi odio tenetur! Reiciendis officia neque et accusamus, ducimus ullam provident, eius ratione veniam dolorum nemo obcaecati eligendi rec</p>
+                    <a href="#">Read More</a>
+                </div>
+
+            </div>
+            <!--box-3---------------------->
+            <div class="blog-box">
+
+              <!--img------------>
+              <div class="blog-img">
+                  <img src="https://images.pexels.com/photos/259165/pexels-photo-259165.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog">
+              </div>
+
+              <!-- text---------->
+              <div class="blog-text">
+                  <span>18 July 2021 / Web Design</span>
+                  <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto nisi odio tenetur! Reiciendis officia neque et accusamus, ducimus ullam provident, eius ratione veniam dolorum nemo obcaecati eligendi rec</p>
+                  <a href="#">Read More</a>
+              </div>
+
+          </div>
+          <!--box-3---------------------->
+          <div class="blog-box">
+
+            <!--img------------>
+            <div class="blog-img">
+                <img src="https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog">
+            </div>
+
+            <!-- text---------->
+            <div class="blog-text">
+                <span>18 July 2021 / Web Design</span>
+                <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto nisi odio tenetur! Reiciendis officia neque et accusamus, ducimus ullam provident, eius ratione veniam dolorum nemo obcaecati eligendi rec</p>
+                <a href="#">Read More</a>
+            </div>
+
+        </div>
+        <!--box-3---------------------->
+        <div class="blog-box">
+
+          <!--img------------>
+          <div class="blog-img">
+              <img src="https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog">
+          </div>
+
+          <!-- text---------->
+          <div class="blog-text">
+              <span>18 July 2021 / Web Design</span>
+              <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto nisi odio tenetur! Reiciendis officia neque et accusamus, ducimus ullam provident, eius ratione veniam dolorum nemo obcaecati eligendi rec</p>
+              <a href="#">Read More</a>
+          </div>
+
+      </div>
+      <!--box-2---------------------->
+      <div class="blog-box">
+
+        <!--img------------>
+        <div class="blog-img">
+            <img src="https://images.pexels.com/photos/4144179/pexels-photo-4144179.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog">
+        </div>
+
+        <!-- text---------->
+        <div class="blog-text">
+            <span>18 July 2021 / Web Design</span>
+            <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto nisi odio tenetur! Reiciendis officia neque et accusamus, ducimus ullam provident, eius ratione veniam dolorum nemo obcaecati eligendi rec</p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+    <!--box-2---------------------->
+    <div class="blog-box">
+
+      <!--img------------>
+      <div class="blog-img">
+          <img src="https://images.pexels.com/photos/253647/pexels-photo-253647.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog">
+      </div>
+
+      <!-- text---------->
+      <div class="blog-text">
+          <span>18 July 2021 / Web Design</span>
+          <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto nisi odio tenetur! Reiciendis officia neque et accusamus, ducimus ullam provident, eius ratione veniam dolorum nemo obcaecati eligendi rec</p>
+          <a href="#">Read More</a>
+      </div>
+
+  </div>
+  <!--box-2---------------------->
+  <div class="blog-box">
+
+    <!--img------------>
+    <div class="blog-img">
+        <img src="https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog">
+    </div>
+
+    <!-- text---------->
+    <div class="blog-text">
+        <span>18 July 2021 / Web Design</span>
+        <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto nisi odio tenetur! Reiciendis officia neque et accusamus, ducimus ullam provident, eius ratione veniam dolorum nemo obcaecati eligendi rec</p>
+        <a href="#">Read More</a>
+    </div>
+
+</div>
+        </div>
+        
+    </section>
+    <!-- Site footer -->
+ <div class="bg-gradiant">
+  <footer class="site-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify About-text">By students at FRCRCE - <i>The major motivation for choosing this topic is to learn the nuances of how bill payment works and the problems related to it.</i> Our goal is Designing and implementing an online Electricity Bill Payment System and fixing the issues related to it.</p>
+        </div>
+  
+        <div class="col-xs-6 col-md-3">
+          <h6>Services</h6>
+          <ul class="footer-links">
+            <li><a href="New-Connection.html">Apply New Connection</a></li>
+            <li><a href="New-Connection.html">Pay Bills</a></li>
+            <li><a href="New-Connection.html">Submit Meter Reading</a></li>
+            <li><a href="New-Connection.html">Split Bills</a></li>
+            <li><a href="complaint.html">Register Complaint</a></li>
+            <li><a href="New-Connection.html">Bill History</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-xs-6 col-md-3">
+          <h6>Help & Support</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Customer Care Centre</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container-fluid"> 
+      <div class="row"> 
+      <div class="col-md-8 col-sm-6 col-xs-12"> 
+        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+          <a href="http://www.frcrce.ac.in/">CRCE</a>. 
+        </p> 
+        </div>
+  
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="instagram" href="https://instagram.com/_bastienalmeida_?igshid=Zjc2ZTc4Nzk="><i class="bi bi-instagram"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/bastienalmeida1?s=21&t=9AlZGOjr6YzAYbe6k3rkdw"><i class="bi bi-twitter"></i></a></li>
+            <li><a class="spotify" href="https://open.spotify.com/user/o7yslybrce1txf65eyzr0zdk7?si=jR0dZbrdQSWe9QerQC00Qw&fbclid=PAAaZl9-GU_RVNimMrtrkdzv3kU0qpSZzXjP2DrCL7732K3RZJD51qXdc7Fa8&nd=1&utm_medium=organic&_branch_referrer=H4sIAAAAAAAAA9WO226CMACGnwbvpkgF3BKyEB3GM2iYyo1pSyuVCqW0bvD0gyV7iCX%2F1X%2FKlykl6rfRqBalYrQZQiGGnBX56F3IMtVYeaUgxcCwJlRzftWSe1k%2FMYBvWEGnPh7%2BrXH56CxdE9knblPzBklMxuqbOjZpWmm2ae4aIKiZAeb3g5kmSKbR8UReIyKjmWlGX4blUIQ5S7tG6Psw4a8vi%2Fh6%2BNyxx1YqmaftE%2BSxWYlj0p7voTWXs43rAmsNDslqbo%2Brc4rdAE5%2FoSHnCOL8X4F3R0V%2FMh5QApWWxCvlDRYMD67Ms8%2FFBHygKReU7JfbPar0Rl92UzsJb6G7zCIWnxbY5xe%2BW0WVsxbPDAc0c8omQPFptvoBPMJcP%2FEBAAA%3D&product=open&%24full_url=https%3A%2F%2Fopen.spotify.com%2Fuser%2Fo7yslybrce1txf65eyzr0zdk7%3Fsi%3DjR0dZbrdQSWe9QerQC00Qw%26fbclid%3DPAAaZl9-GU_RVNimMrtrkdzv3kU0qpSZzXjP2DrCL7732K3RZJD51qXdc7Fa8&feature=organic&_i=5Xn43Eb8lpfeOIMObquLuYN85ZPgP7IhQiUWGcAlYlNJQq6KpvhcFfh6oyFbUWCJ&_branch_match_id=1010492094630181165"><i class="bi bi-facebook"></i></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/in/bastien-almeida-04975a238"><i class="bi bi-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
